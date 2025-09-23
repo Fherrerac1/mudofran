@@ -1,0 +1,36 @@
+/* Estilos para el breadcrumb */
+.breadcrumb {
+
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem; /* Aumentamos ligeramente el tamaño de fuente */
+    display: flex;
+    align-items: center;
+
+    .breadcrumb-item {
+        color: var();
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.3px; /* Aumentamos ligeramente el espaciado entre letras */
+
+        & + .breadcrumb-item::before {
+            content: '>';
+            padding: 0 0.5rem;
+        }
+
+        &.active {
+            color: var(--unique-color);
+        }
+
+        /* Estilos para los enlaces dentro de breadcrumb-item */
+        a {
+            font-size: 500;
+            color: var(--text-muted);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--unique-color);
+            }
+        }
+    }
+}

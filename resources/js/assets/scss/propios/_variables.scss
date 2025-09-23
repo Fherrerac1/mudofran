@@ -1,0 +1,112 @@
+// Color para texto secundario o atenuado
+$color-muted: #8f969c;
+
+$color-disabled: #ebebeb;
+$color-border: #ccd0d4;
+
+/*===========================================
+=           Bootstrap Overrides             =
+===========================================*/
+// Colores redefinidos para integración con Bootstrap
+$warning: #ffe094;
+$success: #6cbf6c;
+$danger: #dd6a66;
+$info: #877bfa;
+
+// Pastel para alertas suaves
+$warning-pastel: #fff3cd;
+$warning-pastel-border: #ffeeba;
+$warning-pastel-text: #856404;
+
+/*-------------------------------------------
+|       Aclarados adicional Bootstrap       |
+-------------------------------------------*/
+$warning-lighten-10: lighten($warning, 10%);
+$border-warning-lighten-20: lighten($warning, 20%);
+$success-lighten-10: lighten($success, 10%);
+$border-success-lighten-20: lighten($success, 20%);
+$danger-lighten-10: lighten($danger, 10%);
+$border-danger-lighten-20: lighten($danger, 20%);
+$info-lighten-10: lighten($info, 10%);
+$border-info-lighten-20: lighten($info, 20%);
+
+/*-------------------------------------------
+|     Oscurecimiento adicional Bootstrap     |
+-------------------------------------------*/
+$warning-darken-10: darken($warning, 10%);
+$border-warning-darken-20: darken($warning, 20%);
+$success-darken-10: darken($success, 10%);
+$border-success-darken-20: darken($success, 20%);
+$danger-darken-10: darken($danger, 10%);
+$border-danger-darken-20: darken($danger, 20%);
+$info-darken-10: darken($info, 10%);
+$border-info-darken-20: darken($info, 20%);
+
+/*===========================================
+=               Gradientes                  =
+===========================================*/
+$color-gradient-button-1: #7286ff;
+$color-gradient-button-2: #f39ea9;
+$color-gradient-button-secondary-1: #253249;
+$color-gradient-button-secondary-2: #26adea;
+
+/*===========================================
+=             Gradientes Finales            =
+===========================================*/
+// Gradientes ya construidos (listos para usar en backgrounds, texto, botones)
+$gradient-primary-button: linear-gradient(to right, $color-gradient-button-1, $color-gradient-button-2);
+$gradient-secondary-button: linear-gradient(to right, $color-gradient-button-secondary-1, $color-gradient-button-secondary-2);
+$gradient-primary-text: linear-gradient(to right, $color-gradient-button-1, $color-gradient-button-2);
+$gradient-secondary-text: linear-gradient(to right, $color-gradient-button-secondary-1, $color-gradient-button-secondary-2);
+
+:root {
+    /*--------------------------------------------------
+    |        Variables para Colores de Texto           |
+    --------------------------------------------------*/
+    --color-muted: #{$color-muted};
+    --color-disabled: #{$color-disabled};
+    --color-border: #{$color-border};
+
+    // Gradientes aplicables a texto
+    --text-gradient-primary: #{$gradient-primary-text};
+    --text-gradient-secondary: #{$gradient-secondary-text};
+
+    /*--------------------------------------------------
+    |        Variables para Gradientes visuales        |
+    --------------------------------------------------*/
+    --gradient-primary-text: #{$gradient-primary-text};
+    --gradient-secondary-text: #{$gradient-secondary-text};
+
+    /*--------------------------------------------------
+    |     Colores personalizados de Bootstrap          |
+    --------------------------------------------------*/
+    --bs-warning: #{$warning};
+    --bs-success: #{$success};
+    --bs-danger: #{$danger};
+    --bs-info: #{$info};
+
+     // Pastel para alertas suaves
+    --bs-warning-pastel: #{$warning-pastel};
+    --bs-warning-pastel-border: #{$warning-pastel-border};
+    --bs-warning-pastel-text: #{$warning-pastel-text};
+
+    // Variaciones aclaradas para componentes Bootstrap
+    --bs-warning-lighten-10: #{$warning-lighten-10};
+    --bs-warning-border-lighten-20: #{$border-warning-lighten-20};
+    --bs-success-lighten-10: #{$success-lighten-10};
+    --bs-success-border-lighten-20: #{$border-success-lighten-20};
+    --bs-danger-lighten-10: #{$danger-lighten-10};
+    --bs-danger-border-lighten-20: #{$border-danger-lighten-20};
+    --bs-info-lighten-10: #{$info-lighten-10};
+    --bs-info-border-lighten-20: #{$border-info-lighten-20};
+
+    // Variaciones oscuras para componentes Bootstrap
+    --bs-warning-darken-10: #{$warning-darken-10};
+    --bs-warning-border-darken-20: #{$border-warning-darken-20};
+    --bs-success-darken-10: #{$success-darken-10};
+    --bs-success-border-darken-20: #{$border-success-darken-20};
+    --bs-danger-darken-10: #{$danger-darken-10};
+    --bs-danger-border-darken-20: #{$border-danger-darken-20};
+    --bs-info-darken-10: #{$info-darken-10};
+    --bs-info-border-darken-20: #{$border-info-darken-20};
+}

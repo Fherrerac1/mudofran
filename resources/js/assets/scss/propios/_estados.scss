@@ -1,0 +1,79 @@
+/*=============================================
+=            Colores de Estados Pastel        =
+=============================================*/
+
+.estado-abierta, .estado-incompleto, .estado-pendiente {
+    background-color: #fff9e6;
+    color: #b08900
+}
+
+.estado-ejecucion {
+    background-color: #e8f4fe;
+    color: #1a5fa0;
+}
+
+.estado-finalizada, .estado-recepcionado, .estado-pagado, .estado-aceptado, .estado-facturado {
+    background-color: #edf7ed;
+    color: #10754c;
+}
+
+.estado-cancelada, .estado-gasto-gasto, .estado-anulada, .estado-rechazado  {
+    background-color: #feeceb;
+    color: #a12828;
+}
+
+/* Estados pedidos pastel */
+.estado-enviado, .estado-parcial {
+    background-color: #d6e9ff;
+    color: #1a5fa0;
+}
+
+.estado-asignado, .estado-rectificada {
+    background-color: #e0d7f7;
+    color: #5948b1;
+}
+
+.estado-desconocido {
+    background-color: #e2e3e5;
+    color: #6c757d;
+}
+
+/* Borde lateral izquierdo según estado */
+.border-abierta {
+    border-top: 1px solid #fff9e6;
+    border-left: 1px solid #fff9e6;
+    border-right: 4px solid #fff0b9;
+    border-bottom: 1px solid #fff0b9;
+}
+
+.border-ejecucion {
+    border-top: 1px solid #e8f4fe;
+    border-left: 1px solid #e8f4fe;
+    border-right: 4px solid #d6e9ff;
+    border-bottom: 1px solid #d6e9ff;
+}
+
+.border-finalizada {
+    border-top: 1px solid #edf7ed;
+    border-left: 1px solid #edf7ed;
+    border-right: 4px solid #d9f7e5;
+    border-bottom: 1px solid #d9f7e5;
+}
+
+.border-cancelada {
+    border-top: 1px solid #feeceb;
+    border-left: 1px solid #feeceb;
+    border-right: 4px solid #fdd8db;
+    border-bottom: 1px solid #fdd8db;
+}
+
+/* Opcional: estilos base para botón tipo badge */
+.estado-badge {
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    text-transform: capitalize;
+}

@@ -1,0 +1,39 @@
+/**********************************************************************
+                        TIME PICKER CUSTOM STYLES
+ **********************************************************************/
+
+/* Estilo cuando un elemento está activo (seleccionado) */
+.vue__time-picker .dropdown ul li:not([disabled]).active {
+    background: var(--unique-color) !important;
+}
+
+/* Estilo del input del TimePicker */
+.vue__time-picker input.vue__time-picker-input {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    height: 42px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #495057;
+}
+
+/* Cuando el TimePicker está deshabilitado */
+.vue__time-picker input.vue__time-picker-input:disabled {
+    background-color: #e9ecef !important; /* Gris claro Bootstrap */
+    cursor: not-allowed;
+    color: #6c757d; /* Texto más tenue */
+    opacity: 1; /* Para que no se vuelva muy tenue */
+}
+
+/* Estilo del input cuando está en foco */
+.vue__time-picker input.vue__time-picker-input:focus {
+    border: 2px solid #4caf50;
+    outline: 0;
+}
+
+/* Separación del desplegable del selector */
+.vue__time-picker .dropdown {
+    margin-top: 5px;
+}

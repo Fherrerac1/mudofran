@@ -1,0 +1,9 @@
+/**********************************************************************
+                        CHECKBOX SWITCH CUSTOM STYLES
+ **********************************************************************/
+
+/* Estilo cuando el checkbox (switch) está activado */
+.form-check-input:checked {
+    background-color: var(--style-color) !important; /* Color principal definido en variables globales */
+    border-color: var(--style-color) !important;
+}

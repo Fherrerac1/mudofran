@@ -1,0 +1,55 @@
+.modal-footer {
+    border-top: none !important;
+}
+
+// Modales
+.modal-content {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0.5rem 2rem rgba(var(--main-background), 0.2);
+}
+
+/* Animación más suave y elegante */
+@keyframes softPulse {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    75% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.icon-pulse-soft {
+    padding: 1rem;
+    display: inline-flex;
+    animation: softPulse 2s ease infinite;
+    transform-origin: center;
+
+    i {
+        transition: all 0.3s ease;
+    }
+}
+
+/* Ajustamos los tiempos para mejor fluidez */
+.modal.show .modal-content {
+    animation: modalScaleIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes modalScaleIn {
+    from {
+        transform: scale(0.98) translateY(10px);
+        opacity: 0.8;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}

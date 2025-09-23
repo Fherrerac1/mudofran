@@ -1,0 +1,13 @@
+.text-gradient-primary {
+    background: var(--gradient-primary-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.text-gradient-secondary {
+    background: var(--gradient-secondary-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}

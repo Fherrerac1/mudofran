@@ -1,0 +1,31 @@
+@use '../propios/variables' as v;
+
+.factura-recurrente-modal {
+    .modal-dialog {
+        .modal-body {
+            .container-fluid {
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* SECTION PROFILE IBAN */
+.buttons-action {
+    button {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            font-size: 1.1rem !important;
+        }
+    }
+    button.btn-delete {
+        background-color: v.$danger !important;
+        &:hover {
+            background-color: v.$danger-darken-10 !important;
+        }
+    }
+}
