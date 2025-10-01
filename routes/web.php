@@ -31,6 +31,10 @@ use App\Http\Controllers\Auth\EmailVerificationPromptController;
 use App\Http\Controllers\Auth\PasswordController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 
+// IMPORTS DE PRUEBAS
+use App\Http\Controllers\PruebasController;
+
+
 // Landing page & login
 Route::get('/', function () {
     return Inertia::render('Auth/Login', [
@@ -64,6 +68,7 @@ Route::middleware(['auth', TenantScope::class])->group(function () {
 
     Route::get('/dashboard', [ViewController::class, 'index'])->name('dashboard');
 
+    Route::get('/dashboard/excel', [ViewController::class, 'excel'])->name('excel');
     //profile
     Route::get('my_zone', [ProfileController::class, 'myZone'])->name('my.zone');
     Route::post('/users/{id}/update-password', [ProfileController::class, 'updatePasswordByAdmin'])
@@ -257,6 +262,11 @@ Route::middleware(['auth'])->group(function () {
     Route::post('tenants/{tenant}/update', [TenantController::class, 'update'])->name('tenants.update');
     Route::delete('tenants/{tenant}/destroy', [TenantController::class, 'destroy'])->name('tenants.destroy');
 });
+
+
+// PRUEBAS PARA LA VENTANA DE IMPORTACIÓN
+Route::get('/pruebas', [PruebasController::class, 'index'])->name('pruebas.index');
+Route::post('/pruebas/importar', [PruebasController::class, 'importar'])->name('pruebas.importar');
 
 require __DIR__ . '/auth.php';
 
